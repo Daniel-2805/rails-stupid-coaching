@@ -1,4 +1,5 @@
-<form action="/answer">
-  <input type="text" name="everything" value="<%= params[:everything] %>" placeholder="Prueba">
-  <input type="submit" value="Answer!">
-</form>
+<h1>Stupid Coaching</h1>
+
+<p>YOU: <%= @question %></p>
+<p>Your Coach: <%= @answers %> </p>
+<%= link_to "Ask again", ask_path %>
